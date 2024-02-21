@@ -1,0 +1,26 @@
+{
+  "title": {
+    "message": "Mon site",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "Mon site Logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.教程": {
+    "message": "Didacticiel",
+    "description": "Navbar item with label 教程"
+  },
+  "item.label.博客": {
+    "message": "Blog",
+    "description": "Navbar item with label 博客"
+  },
+  "item.label.Facebook's GitHub": {
+    "message": "Facebook's GitHub",
+    "description": "Navbar item with label Facebook's GitHub"
+  },
+  "item.label.Author's GitHub": {
+    "message": "Author's GitHub",
+    "description": "Navbar item with label Author's GitHub"
+  }
+}

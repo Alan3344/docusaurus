@@ -1,0 +1,18 @@
+{
+  "version.label": {
+    "message": "prochaine version",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.教程 - 基础知识": {
+    "message": "Tutoriel - Bases",
+    "description": "The label for category 教程 - 基础知识 in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.教程 - 基础知识.link.generated-index.description": {
+    "message": "Apprenez les concepts les plus importants du Docusaurus en 5 minutes.",
+    "description": "The generated-index page description for category 教程 - 基础知识 in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.教程 - 附加内容": {
+    "message": "Tutoriel - Extras",
+    "description": "The label for category 教程 - 附加内容 in sidebar tutorialSidebar"
+  }
+}
