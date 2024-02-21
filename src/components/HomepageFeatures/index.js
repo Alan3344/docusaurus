@@ -1,35 +1,68 @@
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
+import Translate, { translate } from '@docusaurus/Translate';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
+    title: translate({
+      id:
+        'homepage.feature1.title',
+      message: '便于使用',
+      description: 'The title of the first feature'
+    }),
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        <Translate
+          id="homepage.feature1.description"
+          description="The description of the first feature"
+        >
+        Docusaurus 的设计初衷是为了易于安装和使用，用于快速启动并运行您的网站。
+        </Translate>
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: translate({
+      id: 'homepage.feature2.title',
+      message: '专注于重要的事情',
+      description: 'The title of the second feature'
+    }),
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        <Translate
+          id="homepage.feature2.description"
+          description="The description of the second feature"
+        >
+        Docusaurus 让您可以专注于文档，而我们会帮您处理杂务。去继续并将您的文档移至
+        </Translate>
+        <code>docs</code>
+        <Translate
+          id="homepage.feature2.description2"
+          description="The description of the second feature"
+        >
+        目录中。
+        </Translate>
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: translate({
+      id: 'homepage.feature3.title',
+      message: '由 React 助力',
+      description: 'The title of the third feature'
+    }),
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        <Translate
+          id="homepage.feature3.description"
+          description="The description of the third feature"
+        >
+        通过重用 React 来扩展或自定义您的网站布局。Docusaurus 可以在重复使用相同的页眉和页脚时进行扩展。
+        </Translate>
       </>
     ),
   },

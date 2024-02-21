@@ -1,37 +1,55 @@
 // @ts-check
-// `@type` JSDoc annotations allow editor autocompletion and type checking
-// (when paired with `@ts-check`).
-// There are various equivalent ways to declare your Docusaurus config.
+// `@type` JSDoc 注释允许编辑器自动完成和类型检查
+//（与“@ts-check”配对时）。
+// 有多种等效方法来声明 Docusaurus 配置。
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
-import {themes as prismThemes} from 'prism-react-renderer';
+import { themes as prismThemes } from 'prism-react-renderer';
+
+const ProjectName = 'docusaurus'
+const BASE_URL = process.env.BASE_URL || `/${ProjectName}/`
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'My Site',
   tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  favicon: BASE_URL + 'img/favicon.ico',
 
-  // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  // 在此设置您网站的生产 URL
+  url: 'https://alan3344.github.io',
+  // 设置为您的站点提供服务的 /<baseUrl>/路径名
+  // 对于 GitHub 页面部署，通常是 '/<projectName>/' /docusaurus/
+  // ~$ BASE_URL='/' npx docusaurus serve
+  baseUrl: BASE_URL,
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  //GitHub 页面部署配置。
+  //如果您不使用 GitHub 页面，则不需要这些。
+  organizationName: 'Alan3344', // 通常是您的 GitHub 组织/用户名。
+  projectName: ProjectName, // 通常是您的存储库名称。
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
+  //即使不使用国际化，也可以使用该字段来设置
+  //有用的元数据，如 html lang。例如，如果您的网站是中文的，您
+  //可能想用“zh-Hans”替换“en”。
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'zh',
+    locales: ['zh', 'fr', 'en'],
+    localeConfigs: {
+      zh: {
+        label: '简体中文 (中国)',
+        htmlLang: 'zh-CN',
+      },
+      fr: {
+        label: 'Français',
+        htmlLang: 'fr-FR',
+      },
+      en: {
+        label: 'English',
+        htmlLang: 'en-US',
+      },
+    }
   },
 
   presets: [
@@ -41,17 +59,17 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
+          // 请将其更改为您的存储库。
+          // 删除此项即可删除“编辑此页面”链接。
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/Alan3344/docusaurus/tree/zh-CN',
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
+          // 请将其更改为您的存储库。
+          // 删除此项即可删除“编辑此页面”链接。
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/Alan3344/docusaurus/tree/zh-CN/',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -63,12 +81,12 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
+      // 替换为您项目的社交卡片图像
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
+        title: '我的站点',
         logo: {
-          alt: 'My Site Logo',
+          alt: '我的站点 Logo',
           src: 'img/logo.svg',
         },
         items: [
@@ -76,30 +94,40 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: '教程',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          { to: '/blog', label: '博客', position: 'left' },
+          {
+            type: 'localeDropdown',
+            position: 'right',
+          },
           {
             href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
+            label: 'Facebook\'s GitHub',
+            position: 'right',
+          },
+          {
+            href: 'https://github.com/Alan3344/docusaurus/tree/zh-CN',
+            label: 'Author\'s GitHub',
             position: 'right',
           },
         ],
       },
+      // 网站底部的链接部分
       footer: {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: '文档',
             items: [
               {
-                label: 'Tutorial',
+                label: '教程',
                 to: '/docs/intro',
               },
             ],
           },
           {
-            title: 'Community',
+            title: '社区',
             items: [
               {
                 label: 'Stack Overflow',
@@ -116,20 +144,20 @@ const config = {
             ],
           },
           {
-            title: 'More',
+            title: '更多',
             items: [
               {
-                label: 'Blog',
+                label: '博客',
                 to: '/blog',
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/Alan3344/docusaurus',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `版权所有 © ${new Date().getFullYear()} My Project, Inc. 使用 Docusaurus 构建。`,
       },
       prism: {
         theme: prismThemes.github,

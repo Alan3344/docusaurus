@@ -2,13 +2,13 @@
 sidebar_position: 3
 ---
 
-# Create a Blog Post
+# 创建博客文章
 
-Docusaurus creates a **page for each blog post**, but also a **blog index page**, a **tag system**, an **RSS** feed...
+Docusaurus 为每个博客文章创建一个 **页面**，同时还创建一个 **博客索引页面**、**标签系统**、**RSS** 提要...
 
-## Create your first Post
+## 创建您的第一篇文章
 
-Create a file at `blog/2021-02-28-greetings.md`:
+在 `blog/2021-02-28-greetings.md` 创建一个文件：
 
 ```md title="blog/2021-02-28-greetings.md"
 ---
@@ -26,9 +26,9 @@ authors:
 tags: [greetings]
 ---
 
-Congratulations, you have made your first post!
+恭喜，您已经发表了第一篇文章！
 
-Feel free to play around and edit this post as much as you like.
+您可以随意尝试和编辑这篇文章。
 ```
 
-A new blog post is now available at [http://localhost:3000/blog/greetings](http://localhost:3000/blog/greetings).
+现在可以在 [http://localhost:3000/blog/greetings](http://localhost:3000/blog/greetings) 上找到新的博客文章。

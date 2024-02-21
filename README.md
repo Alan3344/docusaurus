@@ -39,3 +39,24 @@ $ GIT_USER=<Your GitHub username> yarn deploy
 ```
 
 If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+
+
+Myself notes:
+
+```shell
+# 复制 *md 目录到 i18n/en 目录
+./make_lang en
+
+# 自动导出源代码的待翻译字段构成的 json 文件到每个语言目录下，一部分内置的字段会自动翻译
+npx docusaurus write-translations
+
+# 选择要启动调试的语言
+yarn run start --locale fr
+
+# 构建打包
+yarn build
+
+# 本地测试构建的网站 （一般情况下，`baseUrl = '/'`）
+# BASE_URL='/' npx docusaurus serve
+npx docusaurus serve
+```
