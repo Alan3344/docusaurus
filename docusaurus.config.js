@@ -152,7 +152,7 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/Alan3344/docusaurus',
+                href: 'https://github.com/Alan3344/docusaurus/tree/zh-CN',
               },
             ],
           },

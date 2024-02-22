@@ -38,12 +38,14 @@ const FeatureList = [
         >
         Docusaurus 让您可以专注于文档，而我们会帮您处理杂务。去继续并将您的文档移至
         </Translate>
+        {' '}
         <code>docs</code>
+        {' '}
         <Translate
           id="homepage.feature2.description2"
           description="The description of the second feature"
         >
-        目录中。
+          目录中。
         </Translate>
       </>
     ),

@@ -33,7 +33,7 @@
   },
   "link.item.label.GitHub": {
     "message": "GitHub",
-    "description": "The label of footer link with label=GitHub linking to https://github.com/Alan3344/docusaurus"
+    "description": "The label of footer link with label=GitHub linking to https://github.com/Alan3344/docusaurus/tree/zh-CN"
   },
   "copyright": {
     "message": "Copyright © 2024 My Project, Inc. Construit avec Docusaurus.",

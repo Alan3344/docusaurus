@@ -303,11 +303,11 @@
     "description": "The title of the second feature"
   },
   "homepage.feature2.description": {
-    "message": "Docusaurus vous permet de vous concentrer sur votre documentation pendant que nous nous occupons des tâches ménagères. Allez-y et déplacez votre document vers ",
+    "message": "Docusaurus vous permet de vous concentrer sur votre documentation pendant que nous nous occupons des tâches ménagères. Allez-y et déplacez votre document vers",
     "description": "The description of the second feature"
   },
   "homepage.feature2.description2": {
-    "message": " dans l'annuaire.",
+    "message": "dans l'annuaire.",
     "description": "The description of the second feature"
   },
   "homepage.feature3.title": {
