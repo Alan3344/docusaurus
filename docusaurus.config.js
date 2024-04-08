@@ -6,7 +6,7 @@
 
 import { themes as prismThemes } from 'prism-react-renderer';
 
-const ProjectName = 'docusaurus'
+const ProjectName = 'docusaurus' // BASE_URL='/docusaurus/' npx docusaurus serve
 const BASE_URL = process.env.BASE_URL || `/${ProjectName}/`
 
 /** @type {import('@docusaurus/types').Config} */
